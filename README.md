@@ -1,1 +1,1 @@
-# Librer-a-computaci-n-cu-ntica-N-meros-complejos
+# Libreria-computacion-cuantica-Numeros-complejos
