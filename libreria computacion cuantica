@@ -1,0 +1,69 @@
+from sys import math
+from sys import unittest
+
+
+def main():
+
+    a = (-2, 1)
+    b = (1, 2)
+
+    print(division(a, b))
+
+def suma(a, b):
+
+    pr = a[0] + b[0]
+    pi = a[1] + b[1]
+
+    return (pr, pi)
+
+def producto(a, b):
+
+    pr = a[0]*b[0]-a[1]*b[1]
+
+    pi = a[0]*b[1]+a[1]*b[0]
+
+    return (pr, pi)
+
+def resta(a, b):
+
+    pr = a[0] - b[0]
+    pi = a[1] - b[1]
+
+    return (pr, pi)
+
+def division(a, b):
+
+    pr = ((a[0]*b[0])+(a[1]*b[1]))/((b[0]**2)+(b[1]**2))
+
+    pi = ((a[1]*b[0])-(a[0]*b[1]))/((b[0]**2)+(b[1]**2))
+
+    return (pr, pi)
+
+def modulo(c):
+    return ((c[0]**2 + c[1]**2)**0.5)
+
+def conjugado(c):
+    return (c[0], -c[1])
+
+def cartesianoAPolar(c):
+
+    modulo = modulo(c)
+
+    fase = math.atan2(c[1], c[0])
+
+    return (modulo, fase)
+
+def PolarACartesiano(c):
+
+    x = c[0]*math.cos(c[1])
+    y = c[0]*math.sin(c[1])
+
+    return (x, y)
+
+def fase(c):
+
+    angulo = math.atan2(c[1], c[0])
+
+    return angulo
+
+main()
