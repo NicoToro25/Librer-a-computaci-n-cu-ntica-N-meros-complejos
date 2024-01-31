@@ -1,5 +1,4 @@
 # Libreria-computacion-cuantica-Numeros-complejos
-# CNYT
 # Operaciones con numeros Complejos
 Los números complejos son un conjunto matemático que extiende los números reales al introducir una nueva unidad imaginaria denotada como "i". Cada número complejo está compuesto por dos partes: la real y la imaginaria.
 Cada una de las funciones del programa recibira un par de tuplas y realizara la operación correspondiente:
